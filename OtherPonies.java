@@ -10,7 +10,11 @@ public OtherPonies(int ponyAge, String ponyName) //this is a constructor
     name = ponyName;
 }
 
-    public String toString() //creating this to override the default Java toString method
+
+    //creating this to override the default Java toString method
+    //Need this toString method because printing out an object itself
+    // would just print out the memory address of the object, not its attributes.
+    public String toString()
     {
 
         return name + ": " + age;
